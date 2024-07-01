@@ -1,42 +1,46 @@
 <section id="menu">
     <div class="menu-container">
+        <button class="menu-toggle" (click)="toggleMenu()">☰</button>
+        <nav class="menu-items" [class.show]="menuOpen">
 
-        <button>
-            <a href="#sobre">Sobre Mi</a>
-        </button>
-        <button>
-            <a href="#skills">skills</a>
-        </button>
-        <button>
-            <a href="#proyectos">proyectos</a>
-        </button>
-        <button>
-            <a href="#contacto" >Contacto</a>
-        </button>
+            <button>
+                <a href="#sobre" (click)="closeMenu()">Sobre Mi</a>
+            </button>
+            <button>
+                <a href="#skills" (click)="closeMenu()">skills</a>
+            </button>
+            <button>
+                <a href="#proyectos" (click)="closeMenu()">proyectos</a>
+            </button>
+            <button>
+                <a href="#contacto" (click)="closeMenu()">Contacto</a>
+            </button>
+        </nav>
     </div>
-
 </section>
 
 
 <section id="presentacion">
     <div class="presentacion-container">
+        <div class="img-box">
+            <div class="img-container">
+                <img src="../../../assets/img/img2.jpeg">
+            </div>
+        </div>
         <div class="text-container">
             <h1>BRAIAN KANDYBA</h1>
             <h2>Desarrollador <span>Jr Front-End</span></h2>
             <div class="text-enlaces">
                 <button>
-                    <a href="">CV</a>
+                    <a target="_blank"
+                        href="https://drive.google.com/file/d/1bFHtOQ0tR4UfntwfHd-bTFGpv2D3qbMI/view?usp=sharing">CV</a>
                 </button>
                 <button>
-                    <a href="">LINKEDIN</a>
+                    <a target="_blank" href="https://www.linkedin.com/in/braian-kandyba-a7621021a/">LINKEDIN</a>
                 </button>
             </div>
         </div>
-        <div class="img-box">
-            <div class="img-container">
-                <img src="../../../assets/img/img_portada.jpg">
-            </div>
-        </div>
+
     </div>
 </section>
 
@@ -55,6 +59,3 @@
 <section id="contacto">
     <app-contacto></app-contacto>
 </section>
-
-
-

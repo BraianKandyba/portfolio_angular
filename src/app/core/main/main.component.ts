@@ -6,5 +6,15 @@ import { Component } from '@angular/core';
   styleUrl: './main.component.scss'
 })
 export class MainComponent {
+    menuOpen = false;
+
+    toggleMenu() {
+        this.menuOpen = !this.menuOpen;
+    }
+
+    closeMenu() {
+        this.menuOpen = false;
+    }
+
 
 }
