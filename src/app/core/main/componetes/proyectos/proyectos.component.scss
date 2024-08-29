@@ -85,7 +85,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 5px;
-    gap: 25px;
+    gap: 16px;
     width: 80%;
     height: 20%;
 
@@ -142,12 +142,13 @@
 
 
 @media (min-width: 998px){
-    .proyectos-container{
+    .proyectos-container {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
 
     }
+
 }
 
 
